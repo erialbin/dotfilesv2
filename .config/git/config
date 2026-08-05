@@ -10,6 +10,16 @@
 	br = branch
 	ci = commit
 	st = status
+  df = diff
+	ds = diff --staged
+	lg = log -p
+	lol = log --graph --decorate --pretty=oneline --abbrev-commit
+	lola = log --graph --decorate --pretty=oneline --abbrev-commit --all --date=local
+	ls = ls-files
+	unstage = reset HEAD
+
+	# Show files ignored by git:
+	ign = ls-files -o -i --exclude-standard
 [init]
 	defaultBranch = master
 [pull]
