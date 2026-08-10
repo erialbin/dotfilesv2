@@ -21,7 +21,7 @@
 	# Show files ignored by git:
 	ign = ls-files -o -i --exclude-standard
 [init]
-	defaultBranch = master
+	defaultBranch = main
 [pull]
 	rebase = true 			 # Rebase (instead of merge) on pull
 [push]
