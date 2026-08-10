@@ -230,9 +230,5 @@ Optional: `uv` (sourced from `conf.d/uv.env.fish`), `cargo`/rustup (sourced from
 - **Global gitignore:** `.config/git/ignore` applies to *all* repos on the machine, not
   just this one. It currently excludes `**/.claude/settings.local.json`,
   `compile_commands.json` and `.DS_store`.
-- **`.DS_store` won't match on Linux:** the pattern is lowercase-`s`, but the real file is
-  `.DS_Store`. On macOS git sets `core.ignorecase=true` on a case-insensitive filesystem
-  and the pattern matches anyway; on Linux it does not, so `.DS_Store` files arriving from
-  a Mac show up as untracked. Fix the case in `.config/git/ignore` if that bites.
 - **Secrets:** everything here is public. Don't track anything with credentials —
   `.claude/settings.json` is fine, but API keys, SSH keys and `.env` files are not.
