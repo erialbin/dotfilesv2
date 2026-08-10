@@ -234,7 +234,5 @@ Optional: `uv` (sourced from `conf.d/uv.env.fish`), `cargo`/rustup (sourced from
   `.DS_Store`. On macOS git sets `core.ignorecase=true` on a case-insensitive filesystem
   and the pattern matches anyway; on Linux it does not, so `.DS_Store` files arriving from
   a Mac show up as untracked. Fix the case in `.config/git/ignore` if that bites.
-- **Default branch mismatch:** `.config/git/config` sets `init.defaultBranch = master`,
-  while this repo is on `main`.
 - **Secrets:** everything here is public. Don't track anything with credentials —
   `.claude/settings.json` is fine, but API keys, SSH keys and `.env` files are not.
