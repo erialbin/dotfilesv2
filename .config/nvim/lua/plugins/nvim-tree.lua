@@ -21,8 +21,13 @@ return {
 						},
 					},
 				},
+				buffers = {
+					follow_current_file = {
+						enabled = false,
+						leave_dirs_open = false,
+					},
+				},
 				event_handlers = {
-
 					{
 						event = "file_open_requested",
 						handler = function()
